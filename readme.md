@@ -7,8 +7,9 @@
 4. [Tech Stack](#tech-stack)  
 5. [Installation](#installation)  
 6. [Usage](#usage)  
-7. [Screenshots](#screenshots)  
-8. [Contributing](#contributing)  
+7. [Screenshots](#screenshots)
+8. [How It Works](#How It Works) 
+9. [Contributing](#contributing)  
 
 
 ---
@@ -26,7 +27,7 @@ This application is designed to assist farmers, students, and agricultural resea
 
 ---
 
-## ✨ Features
+##  Features
 
 - 🖼️ Upload an image of poultry or feces
 - 🤖 Detects disease using a trained deep learning model
@@ -37,7 +38,7 @@ This application is designed to assist farmers, students, and agricultural resea
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 poultry-detect/
@@ -59,7 +60,7 @@ poultry-detect/
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Layer       | Technology                |
 |-------------|----------------------------|
@@ -92,7 +93,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Usage
+##  Usage
 
 1. Run the Flask app:
 ```bash
@@ -108,7 +109,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🖼️ Screenshots
+##  Screenshots
 
 ![WhatsApp Image 2025-06-30 at 21 20 57_e1881da0](https://github.com/user-attachments/assets/1e8ce607-6489-4725-a3ba-7457f4e3ebbb)
 
@@ -118,7 +119,7 @@ http://127.0.0.1:5000
 ---
 
 
-🔄 How It Works
+## How It Works
 
 🏠 The Home Page introduces users to the Poultry Health Hub and provides a “Get Started” button.
 
@@ -129,7 +130,7 @@ http://127.0.0.1:5000
 ✅ The result is displayed on a new page showing both the disease name and the uploaded image.
 
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome!
 
