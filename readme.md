@@ -8,7 +8,7 @@
 5. [Installation](#installation)  
 6. [Usage](#usage)  
 7. [Screenshots](#screenshots)
-8. [How It Works](#How It Works) 
+8. [How It Works]_(#HowItWorks) 
 9. [Contributing](#contributing)  
 
 
