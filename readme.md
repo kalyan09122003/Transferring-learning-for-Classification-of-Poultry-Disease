@@ -1,5 +1,4 @@
 # Transfer Learning–Based Classification of Poultry Diseases for Enhanced Health Management
-
 ## Table of Contents
 1. [Overview](#overview)  
 2. [Features](#features)  
@@ -7,9 +6,10 @@
 4. [Tech Stack](#tech-stack)  
 5. [Installation](#installation)  
 6. [Usage](#usage)  
-7. [Screenshots](#screenshots)
-8. [How It Works]_(#HowItWorks) 
+7. [Screenshots](#screenshots)  
+8. [How It Works](#how-it-works)  
 9. [Contributing](#contributing)  
+
 
 
 ---
