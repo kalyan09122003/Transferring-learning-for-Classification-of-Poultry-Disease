@@ -4,145 +4,130 @@
 1. [Overview](#overview)  
 2. [Features](#features)  
 3. [Project Structure](#project-structure)  
-4. [Technologies & Requirements](#technologies--requirements)  
+4. [Tech Stack](#tech-stack)  
 5. [Installation](#installation)  
 6. [Usage](#usage)  
-7. [Report & Documentation](#report--documentation)  
+7. [Screenshots](#screenshots)  
 8. [Contributing](#contributing)  
 9. [License](#license)  
 
 ---
 
-## Overview
-This project implements an AI‑powered, mobile‑friendly web application to classify poultry diseases from fecal images using **transfer learning**. It categorizes each sample into one of four classes:
+## 📌 Overview
 
-- **Salmonella**  
-- **Newcastle Disease**  
-- **Coccidiosis**  
+**Poultry Detect** is a real-time deep learning–powered web app that helps detect poultry diseases using uploaded images. It classifies images into four categories:
+
 - **Healthy**
+- **Coccidiosis**
+- **Newcastle Disease**
+- **Salmonella**
 
-The goal is to provide immediate, on‑farm diagnostic support—helping farmers reduce economic losses and improve flock health without costly laboratory tests.
-
----
-
-## Features
-- **Image‑based disease classification** via pre‑trained CNN backbones (VGG16, MobileNetV2)  
-- **Four‑class output**: Salmonella | Newcastle Disease | Coccidiosis | Healthy  
-- **Real‑time inference** through a Flask web interface  
-- **Lightweight model** suitable for mobile deployment (TensorFlow Lite)  
-- **User-friendly UI**: upload an image, click submit, view prediction  
-- **Extensible architecture**: add new disease classes or backbone models  
+This application is designed to assist farmers, students, and agricultural researchers in performing fast, on-farm diagnosis to reduce economic losses.
 
 ---
 
-## Project Structure
+## ✨ Features
+
+- 🖼️ Upload an image of poultry or feces
+- 🤖 Detects disease using a trained deep learning model
+- 🧠 Built using a CNN and deployed via Flask
+- ⚡ Lightweight and runs on local machines
+- 📱 Clean and mobile-friendly UI (HTML + CSS)
+- 📥 Displays result with uploaded image
+
+---
+
+## 📁 Project Structure
+
+```
+poultry-detect/
+├── app.py                    # Flask backend
+├── poultry_disease_model.h5 # Trained CNN model
+│
+├── templates/               # Frontend (HTML)
+│   ├── index.html
+│   ├── prediction.html
+│   └── result.html
+│
+├── static/
+│   ├── style.css            # Custom CSS
+│   └── uploads/             # Folder for uploaded images
+│
+├── README.md
+└── requirements.txt         # Python dependencies
 ```
 
-Classification-of-Poultry-Diseases/
-├── app.py                  # Flask application entrypoint
-├── requirements.txt        # Python dependencies
-├── templates/
-│   ├── index.html          # Home & upload page
-│   └── result.html         # Prediction display page
-├── static/
-│   └── css/                # Stylesheets
-├── models/
-│   └── healthy\_vs\_rotten.h5  # Trained CNN model
-├── notebooks/              # Jupyter notebooks for data prep & training
-├── data/
-│   └── poultry-diseases/   # Kaggle dataset (downloaded via Kaggle API)
-└── README.md
+---
 
-````
+## 🧰 Tech Stack
+
+| Layer       | Technology                |
+|-------------|----------------------------|
+| Backend     | Flask (Python)             |
+| ML Framework| TensorFlow + Keras         |
+| Frontend    | HTML, CSS (Playfair Font)  |
+| Model Type  | CNN (Image Classification) |
+| File Upload | Werkzeug                   |
 
 ---
 
-## Technologies & Requirements
+## 🛠️ Installation
 
-### Core Libraries
-- **Flask** 2.2.x  
-- **TensorFlow** 2.13.x  
-- **NumPy** 1.24.x  
-- **Pillow** 9.5.x (for `load_img`)  
-- **Werkzeug** 2.2.x  
+### 1. Clone the Repository
+```bash
+git clone https://github.com/kalyan09122003/Transferring-learning-for-Classification-of-Poultry-Disease.git
+cd poultry-detect
+```
 
-### Hardware & Environment
-- Python 3.8+  
-- GPU (recommended for initial model fine‑tuning)  
-- Google Colab (free GPU) or local CUDA‑enabled machine  
+### 2. Create Virtual Environment (Optional)
+```bash
+python -m venv venv
+source venv/bin/activate    # or venv\Scripts\activate on Windows
+```
 
----
-
-## Installation
-
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/Durgesh-Vaigandla/Classification-of-Poultry-Diseases.git
-   cd Classification-of-Poultry-Diseases
-   ```
-
-2. **Create & activate a virtual environment**
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate   # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Download the dataset**
-
-   * Create a Kaggle API token (`kaggle.json`) and place it in `~/.kaggle/`
-   * Run in a Colab or locally:
-
-     ```bash
-     kaggle datasets download chandrashekarnatesh/poultry-diseases -p data/poultry-diseases --unzip
-     ```
-
-5. **Ensure the trained model**
-
-   * The pre‑trained `poultry_diseases_detection.keras` file should reside in `/`.
-   * If not present, train your own using the Jupyter notebooks in `/main.ipynb`.
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## Usage
+## ▶️ Usage
 
-1. **Start the Flask app**
+1. Run the Flask app:
+```bash
+python app.py
+```
 
-   ```bash
-   python app.py
-   ```
-2. **Open your browser** and navigate to `http://127.0.0.1:5000/`
-3. **Upload an image** of poultry feces (JPG, PNG, JPEG)
-4. **Submit** and view the predicted disease class and confidence score
+2. Open in browser:
+```
+http://127.0.0.1:5000
+```
 
----
-
-## Report & Documentation
-
-A full academic‑style project report is available in PDF and DOCX formats:
-
-* **PDF:** [Durgesh\_Project\_Report.pdf](/Durgesh_Project_Report.pdf)
+3. Upload your poultry image → Click Predict → View the result.
 
 ---
 
-## Contributing
+## 🖼️ Screenshots
 
-Contributions, issues, and feature requests are welcome!
+![WhatsApp Image 2025-06-30 at 21 20 57_e1881da0](https://github.com/user-attachments/assets/1e8ce607-6489-4725-a3ba-7457f4e3ebbb)
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
+![WhatsApp Image 2025-06-30 at 21 20 57_4ff1820f](https://github.com/user-attachments/assets/3a5bb2a0-bf13-415b-8550-7b2beec9725f)
+
 
 ---
 
-## License
+## 🤝 Contributing
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+Contributions are welcome!
+
+1. Fork the project
+2. Create a new branch: `git checkout -b feature/your-feature`
+3. Commit your changes
+4. Push to your branch: `git push origin feature/your-feature`
+5. Create a pull request
+
+---
+
+
+
