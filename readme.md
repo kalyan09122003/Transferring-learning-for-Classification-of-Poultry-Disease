@@ -9,7 +9,7 @@
 6. [Usage](#usage)  
 7. [Screenshots](#screenshots)  
 8. [Contributing](#contributing)  
-9. [License](#license)  
+
 
 ---
 
