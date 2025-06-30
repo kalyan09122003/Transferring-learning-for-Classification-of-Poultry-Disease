@@ -117,6 +117,17 @@ http://127.0.0.1:5000
 
 ---
 
+
+🔄 How It Works
+🏠 The Home Page introduces users to the Poultry Health Hub and provides a “Get Started” button.
+
+📤 On the Prediction Page, users upload an image of the poultry or symptoms.
+
+🧠 The model preprocesses the image (resizing, scaling) and predicts the disease using a trained CNN model (Transfer Learning).
+
+✅ The result is displayed on a new page showing both the disease name and the uploaded image.
+
+
 ## 🤝 Contributing
 
 Contributions are welcome!
