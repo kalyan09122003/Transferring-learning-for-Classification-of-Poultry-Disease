@@ -119,6 +119,7 @@ http://127.0.0.1:5000
 
 
 🔄 How It Works
+
 🏠 The Home Page introduces users to the Poultry Health Hub and provides a “Get Started” button.
 
 📤 On the Prediction Page, users upload an image of the poultry or symptoms.
