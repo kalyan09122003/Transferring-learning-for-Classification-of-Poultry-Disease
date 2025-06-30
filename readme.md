@@ -13,7 +13,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 **Poultry Detect** is a real-time deep learning–powered web app that helps detect poultry diseases using uploaded images. It classifies images into four categories:
 
