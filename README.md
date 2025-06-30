@@ -1,1 +1,0 @@
-# Transferring-learning-for-Classification-of-Poultry-Disease
