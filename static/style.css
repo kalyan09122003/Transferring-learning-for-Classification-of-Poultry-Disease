@@ -1,0 +1,170 @@
+/* Base Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #000;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid green;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Main Content */
+main {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Upload Form */
+.upload-form {
+  margin-bottom: 40px;
+}
+
+.upload-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.upload-form input[type="file"] {
+  padding: 10px;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.upload-form button {
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upload-form button:hover {
+  background-color: #218838;
+}
+
+/* Prediction Result */
+.result {
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+.result .predicted {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+/* Home Page CTA */
+.home-main {
+  padding-top: 100px;
+}
+
+.get-started-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  main {
+    padding: 40px 10px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .upload-form input[type="file"] {
+    width: 100%;
+  }
+
+  .upload-form button,
+  .get-started-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+}
